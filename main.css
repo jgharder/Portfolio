@@ -1,3 +1,83 @@
-.about-me{
-    flex: auto;
+body {
+    font-family: Open Sans, sans-serif;
+    background-color: #ffffe6;
+    color: #383838;
+}
+img{border-radius: 10px}
+* {
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 700px;
+    margin: 36px auto;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding: 12px;
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+}
+
+
+h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+section.about-me hr {
+    margin: 36px 0 36px;
+}
+
+
+section:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+strong {
+    background-color: #FFE0CE;
+}
+
+section.social ul {
+    display: flex;
+}
+
+section.social ul > li:not(:last-child) {
+    margin-right: 12px;
+}
+
+section.talks ul > li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+    section.projects ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+section.projects ul li {
+    margin-bottom: 24px;
+    font-size: 1.4rem;
+}
+
+
+section.contact a {
+    font-size: 1.1rem;
 }
